@@ -1,3 +1,10 @@
 .caja {
+    display: flex;
+    align-items: center;
     border: 2px solid #000;
+}
+
+#informacion {
+    display: flex;
+    justify-content: space-around;
 }

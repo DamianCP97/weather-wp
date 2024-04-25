@@ -29,7 +29,18 @@ add_action('wp_head', 'zona_horaria');
 
 function caja() {
     echo '<div class="caja">
+    <div>
     <h3 id="nombre-ciudad"></h3>
+    <div id="informacion">
+    <p id="hora"></p>
     <p id="temperatura"></p>
+    <p id="humedad"></p>
+    </div>
+    </div>
+    <div>
+    <img id="icono-tiempo" src="" alt="Icono tiempo">
+    </div>
     </div>';
 }
+
+add_shortcode('weather', 'caja');

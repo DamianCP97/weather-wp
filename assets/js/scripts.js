@@ -12,4 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const temperatura = document.getElementById('temperatura');
     temperatura.innerText = ejemplo.current.temp_c;
+
+    const iconoTiempo = document.getElementById('icono-tiempo');
+    iconoTiempo.src = ejemplo.current.condition.icon;
+
+    const humedad = document.getElementById('humedad');
+    humedad.innerText = ejemplo.current.humidity;
+
+    //Obtener la hora
+    const fecha = new Date();
+
+    const horas = fecha.getHours();
+    const minutos = fecha.getMinutes();
+
+    // Formatear la hora como una cadena
+    const horaActual = horas + ':' + minutos;
+
+    const hora = document.getElementById('hora');
+    hora.innerText = horaActual;
 });
