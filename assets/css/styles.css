@@ -1,10 +1,13 @@
 .caja {
     display: flex;
     align-items: center;
-    border: 2px solid #000;
+
+    p {
+        margin-bottom: 0;
+    }
 }
 
-#informacion {
-    display: flex;
-    justify-content: space-around;
+h3#nombre-ciudad {
+    font-size: 1.3rem;
+    margin-bottom: 0;
 }
