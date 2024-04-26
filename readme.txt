@@ -17,7 +17,7 @@ WordPress plugin that provides weather information based on the specified time z
 
 == Installation ==
 
-
+Install the plugin and create the shortcode [weather] where you want to display the weather.
 
 == Frequently Asked Questions ==
 
